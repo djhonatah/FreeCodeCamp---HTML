@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Title of the Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        
+        <h1 id="title">Formulário de Pesquisa</h1>
+        
+        <p id="description">Diga-nos como está sua saúde</p>
+    
+    <form id="survey-form">
+      <label for="name" id="name-label">Nome:</label>
+      <input type="text" id="name" placeholder="Seu nome" required><br><br>
+      
+      <label for="email" id="email-label">Email:</label>
+      <input type="email" id="email" placeholder="Seu email" required><br><br>
+      
+      <label for="number" id="number-label">Idade:</label>
+      <input type="number" id="number" placeholder="Idade" min="1" max="100" required><br><br>
+      
+      <label for="dropdown">Como está sua saúde, esolha uma das opções:</label><br>
+      <select id="dropdown">
+        <option value="option1">Mal</option>
+        <option value="option2">Estavel</option>
+        <option value="option3">Bem</option>
+      </select><br><br>
+      
+      <label>Com qual frequencia você pratica atividades físicas:</label><br>
+      <input type="radio" name="radio-group" value="option1">Raramente<br>
+      <input type="radio" name="radio-group" value="option2">Pouco<br>
+      <input type="radio" name="radio-group" value="option3">As vezes<br>
+      <input type="radio" name="radio-group" value="option4">Frequentemente<br><br>
+      
+      <label>Qual dessas doenças você teve ultimamente:</label><br>
+      <input type="checkbox" name="checkbox-group" value="option1">Virose<br>
+      <input type="checkbox" name="checkbox-group" value="option2">Resfriado<br>
+      <input type="checkbox" name="checkbox-group" value="option3">Alergia<br>
+      <input type="checkbox" name="checkbox-group" value="option4">Dengue<br><br>
+      
+      <label for="comments">Adicione um comentário sobre o que está achando desta pesquisa:</label><br>
+      <textarea id="comments" placeholder="Seu comentário"></textarea><br><br>
+      
+      <button type="submit" id="submit">Enviar Formulário</button>
+    </form>
+</div>
+
+</body>
+</html>
